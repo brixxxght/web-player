@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Green Bright Smart">
+    <meta name="description" content="this is a simple application for playing music built with love, using javascript HTMl and css">
+    <link rel="stylesheet" href="./dist/app.css">
+    <title>Simple music application</title>
+</head>
+<body>
+
+    <audio src="" id="audio"></audio>
+
+    <div class="container">
+        <div class="song-cover">
+            <img src="./images/artist.jpg" alt="current song artist">
+        </div>
+        <div class="song-controls">
+            <header>
+                <i class="bi bi-three-dots-vertical"></i>
+                <i class="bi bi-heart"></i>
+            </header>
+
+            <h1 class="song-info">
+                <span class="song-title">Addicted</span>
+                <span class="song-artist">Rema</span>
+            </h1>
+
+            <div class="song-slider">
+                <div class="song-slider__duration">
+                    <span class="current-time">0:0</span>
+                    <span class="song-duration">0:0</span>
+                </div>
+                <input type="range" value="0" class="song-slider__seek-bar">
+            </div>
+
+            <div class="controls ">
+                <button class="btn btn-skip-backward">
+                    <i class="bi bi-skip-start-fill"></i>
+                </button>
+    
+                <button class="play-btn pause">
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="btn btn-skip-forward">
+                    <i class="bi bi-skip-end-fill"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
